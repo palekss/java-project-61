@@ -7,3 +7,9 @@ Game ["Even"](https://asciinema.org/a/4f7aV1fn8Z4YfZsvS19mJfll4)
 [![asciicast](https://asciinema.org/a/4f7aV1fn8Z4YfZsvS19mJfll4.svg)][def]
 
 [def]: https://asciinema.org/a/4f7aV1fn8Z4YfZsvS19mJfll4
+
+Game ["Calc"](https://asciinema.org/a/eStBRcWYGT5w4A8TOIQwjAd2s)
+
+[![asciicast](https://asciinema.org/a/eStBRcWYGT5w4A8TOIQwjAd2s.svg)][def]
+
+[def]: (https://asciinema.org/a/eStBRcWYGT5w4A8TOIQwjAd2s)
