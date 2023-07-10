@@ -2,7 +2,7 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 import java.util.Scanner;
-public class GSD {
+public class GCD {
     static Scanner scan = new Scanner(System.in);
     static String nameUser;
 
@@ -38,5 +38,4 @@ public class GSD {
             }
         }
     }
-
 }

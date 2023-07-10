@@ -14,8 +14,8 @@ Game ["Calc"](https://asciinema.org/a/eStBRcWYGT5w4A8TOIQwjAd2s)
 
 [def]: (https://asciinema.org/a/eStBRcWYGT5w4A8TOIQwjAd2s)
 
-Game ["GCD"](https://asciinema.org/a/gnWpJ4o2ENQRafGo8MQvmPrjh)
+Game ["GCD"](https://asciinema.org/a/a7N8KJdFFf1hAyYSfK0Z2XcTS)
 
-[![asciicast](https://asciinema.org/a/gnWpJ4o2ENQRafGo8MQvmPrjh.svg)][def]
+[![asciicast](https://asciinema.org/a/a7N8KJdFFf1hAyYSfK0Z2XcTS.svg)][def]
 
-[def]: (https://asciinema.org/a/gnWpJ4o2ENQRafGo8MQvmPrjh)
+[def]: (https://asciinema.org/a/a7N8KJdFFf1hAyYSfK0Z2XcTS)
