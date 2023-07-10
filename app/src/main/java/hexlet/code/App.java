@@ -2,6 +2,7 @@ package hexlet.code;
 
 import hexlet.code.games.Calc;
 import hexlet.code.games.Even;
+import hexlet.code.games.GSD;
 
 import java.util.Scanner;
 
@@ -11,6 +12,7 @@ public class App {
                 + "\n1 - Greet"
                 + "\n2 - Even"
                 + "\n3 - Calc"
+                + "\n4 - GSD"
                 + "\n0 - Exit"
                 + "\nYour choice: ");
         Scanner scan = new Scanner(System.in);
@@ -23,6 +25,8 @@ public class App {
             Even.starting();
         } else if (numberGame.equals("3")) {
             Calc.starting();
+        } else if (numberGame.equals("4")) {
+            GSD.starting();
         } else {
             System.out.println("This game doesn't exist!");
             System.exit(0);
