@@ -39,4 +39,18 @@ public class Engine {
         var randomSymbol = chars[getRandomInt(0, chars.length - 1)];
         return randomSymbol;
     }
+
+    public static String getProgressionString(int stringLength, int firstNumber,
+                                              int progressionDifference, int positionUnknownNumber) {
+        String[] numbers = new String[stringLength];
+        for (var a = 0; a < numbers.length; a++) {
+            numbers[a] = String.valueOf(firstNumber + progressionDifference * a);
+        }
+        numbers[positionUnknownNumber] = "..";
+        String resultString = "";
+        for (var b = 0; b < numbers.length; b++) {
+            resultString = resultString + numbers[b] + " ";
+        }
+        return resultString;
+    }
 }
