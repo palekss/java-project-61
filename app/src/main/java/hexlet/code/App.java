@@ -3,7 +3,7 @@ package hexlet.code;
 import hexlet.code.games.Calc;
 import hexlet.code.games.Even;
 import hexlet.code.games.GCD;
-//import hexlet.code.games.Progression;
+import hexlet.code.games.Progression;
 
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ public class App {
                 + "\n2 - Even"
                 + "\n3 - Calc"
                 + "\n4 - GCD"
-//                + "\n5 - Progression"
+                + "\n5 - Progression"
 //                + "\n6 - Prime"
                 + "\n0 - Exit"
                 + "\nYour choice: ");
@@ -30,8 +30,8 @@ public class App {
             Calc.starting();
         } else if (numberGame.equals("4")) {
             GCD.starting();
-//        } else if (numberGame.equals("5")) {
-//            Progression.starting();
+        } else if (numberGame.equals("5")) {
+            Progression.starting();
 //        } else if (numberGame.equals("6")) {
 //            Prime.starting();
         } else {
