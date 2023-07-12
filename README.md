@@ -4,18 +4,16 @@
 ### ASCIINEMA
 Game ["Even"](https://asciinema.org/a/4f7aV1fn8Z4YfZsvS19mJfll4)
 
-[![asciicast](https://asciinema.org/a/4f7aV1fn8Z4YfZsvS19mJfll4.svg)][def]
-
-[def]: https://asciinema.org/a/4f7aV1fn8Z4YfZsvS19mJfll4
+[![Game "Even"](https://asciinema.org/a/4f7aV1fn8Z4YfZsvS19mJfll4.svg)](https://asciinema.org/a/4f7aV1fn8Z4YfZsvS19mJfll4)
 
 Game ["Calc"](https://asciinema.org/a/eStBRcWYGT5w4A8TOIQwjAd2s)
 
-[![asciicast](https://asciinema.org/a/eStBRcWYGT5w4A8TOIQwjAd2s.svg)][def]
-
-[def]: (https://asciinema.org/a/eStBRcWYGT5w4A8TOIQwjAd2s)
+[![Game "Calc"](https://asciinema.org/a/eStBRcWYGT5w4A8TOIQwjAd2s.svg)](https://asciinema.org/a/eStBRcWYGT5w4A8TOIQwjAd2s)
 
 Game ["GCD"](https://asciinema.org/a/a7N8KJdFFf1hAyYSfK0Z2XcTS)
 
-[![asciicast](https://asciinema.org/a/a7N8KJdFFf1hAyYSfK0Z2XcTS.svg)][def]
+[![Game "GCD"](https://asciinema.org/a/a7N8KJdFFf1hAyYSfK0Z2XcTS.svg)](https://asciinema.org/a/a7N8KJdFFf1hAyYSfK0Z2XcTS)
 
-[def]: (https://asciinema.org/a/a7N8KJdFFf1hAyYSfK0Z2XcTS)
+Game ["Progression"](https://asciinema.org/a/oe8DcyDsm4gI4zuM9MsU7JD9Z)
+
+[![Game "Progression"](https://asciinema.org/a/oe8DcyDsm4gI4zuM9MsU7JD9Z.svg)](https://asciinema.org/a/oe8DcyDsm4gI4zuM9MsU7JD9Z)
