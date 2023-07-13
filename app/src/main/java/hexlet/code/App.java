@@ -1,9 +1,10 @@
 package hexlet.code;
 
-import hexlet.code.games.Calc;
 import hexlet.code.games.Even;
+import hexlet.code.games.Calc;
 import hexlet.code.games.GCD;
 import hexlet.code.games.Progression;
+import hexlet.code.games.Prime;
 
 import java.util.Scanner;
 
@@ -15,7 +16,7 @@ public class App {
                 + "\n3 - Calc"
                 + "\n4 - GCD"
                 + "\n5 - Progression"
-//                + "\n6 - Prime"
+                + "\n6 - Prime"
                 + "\n0 - Exit"
                 + "\nYour choice: ");
         Scanner scan = new Scanner(System.in);
@@ -32,8 +33,8 @@ public class App {
             GCD.starting();
         } else if (numberGame.equals("5")) {
             Progression.starting();
-//        } else if (numberGame.equals("6")) {
-//            Prime.starting();
+        } else if (numberGame.equals("6")) {
+            Prime.starting();
         } else {
             System.out.println("This game doesn't exist!");
             System.exit(0);
