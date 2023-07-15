@@ -4,8 +4,8 @@ import hexlet.code.Engine;
 import java.util.Scanner;
 
 public class Calc {
-    static Scanner scan = new Scanner(System.in);
-    static String nameUser;
+    private static Scanner scan = new Scanner(System.in);
+    private static String nameUser;
 
     public static void starting() {
         nameUser = Engine.greeting();
@@ -15,9 +15,10 @@ public class Calc {
     }
     static void game() {
         var i = 0;
-        while (i < 3) {
-            int firstNumber = Engine.getRandomInt(0, 30);
-            int secondNumber = Engine.getRandomInt(0, 30);
+        final var numberOfGameRounds = 3;
+        while (i < numberOfGameRounds) {
+            final int firstNumber = Engine.getRandomInt(0, 30);
+            final int secondNumber = Engine.getRandomInt(0, 30);
             char symbol = Engine.getChar();
             var calcResultDependOnSymbol = 0;
             if (symbol == '+') {

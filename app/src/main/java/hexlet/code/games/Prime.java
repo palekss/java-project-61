@@ -4,8 +4,8 @@ import hexlet.code.Engine;
 import java.util.Scanner;
 
 public class Prime {
-    static Scanner scan = new Scanner(System.in);
-    static String nameUser;
+    private static Scanner scan = new Scanner(System.in);
+    private static String nameUser;
 
     public static void starting() {
         nameUser = Engine.greeting();
@@ -16,8 +16,9 @@ public class Prime {
 
     public static void game() {
         var i = 0;
-        while (i < 3) {
-            int question = Engine.getRandomInt(1, 1000);
+        final var numberOfGameRounds = 3;
+        while (i < numberOfGameRounds) {
+            final int question = Engine.getRandomInt(1, 1000);
             String rightAnswer = "yes";
             if (question < 2) {
                 rightAnswer = "no";

@@ -3,8 +3,8 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 import java.util.Scanner;
 public class GCD {
-    static Scanner scan = new Scanner(System.in);
-    static String nameUser;
+    private static Scanner scan = new Scanner(System.in);
+    private static String nameUser;
 
     public static void starting() {
         nameUser = Engine.greeting();
@@ -15,9 +15,10 @@ public class GCD {
 
     public static void game() {
         var i = 0;
-        while (i < 3) {
-            int firstNumber = Engine.getRandomInt(1, 100);
-            int secondNumber = Engine.getRandomInt(1, 100);
+        final var numberOfGameRounds = 3;
+        while (i < numberOfGameRounds) {
+            final int firstNumber = Engine.getRandomInt(1, 100);
+            final int secondNumber = Engine.getRandomInt(1, 100);
             int firstValue = firstNumber;
             int secondValue = secondNumber;
             int result = 0;
