@@ -1,10 +1,10 @@
 package hexlet.code;
 
-import hexlet.code.games.Even;
+//import hexlet.code.games.Even;
 import hexlet.code.games.Calc;
-import hexlet.code.games.GCD;
-import hexlet.code.games.Progression;
-import hexlet.code.games.Prime;
+//import hexlet.code.games.GCD;
+//import hexlet.code.games.Progression;
+//import hexlet.code.games.Prime;
 
 import java.util.Scanner;
 
@@ -28,7 +28,7 @@ public class App {
 //        } else if (numberGame.equals("2")) {
 //            Even.starting();
         } else if (numberGame.equals("3")) {
-            Calc.starting1();
+            Calc.starting();
 //        } else if (numberGame.equals("4")) {
 //            GCD.starting();
 //        } else if (numberGame.equals("5")) {
