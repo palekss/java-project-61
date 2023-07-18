@@ -24,17 +24,17 @@ public class App {
         if (numberGame.equals("0")) {
             System.exit(0);
         } else if (numberGame.equals("1")) {
-            Engine.greeting();
-        } else if (numberGame.equals("2")) {
-            Even.starting();
+            Cli.greeting();
+//        } else if (numberGame.equals("2")) {
+//            Even.starting();
         } else if (numberGame.equals("3")) {
-            Calc.starting();
-        } else if (numberGame.equals("4")) {
-            GCD.starting();
-        } else if (numberGame.equals("5")) {
-            Progression.starting();
-        } else if (numberGame.equals("6")) {
-            Prime.starting();
+            Calc.starting1();
+//        } else if (numberGame.equals("4")) {
+//            GCD.starting();
+//        } else if (numberGame.equals("5")) {
+//            Progression.starting();
+//        } else if (numberGame.equals("6")) {
+//            Prime.starting();
         } else {
             System.out.println("This game doesn't exist!");
             System.exit(0);
