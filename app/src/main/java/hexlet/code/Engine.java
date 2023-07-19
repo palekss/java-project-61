@@ -3,9 +3,9 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class Engine {
-    public static Scanner scan = new Scanner(System.in);
-    public static String nameUser;
-    public static final int numberRound = 3;
+    private static Scanner scan = new Scanner(System.in);
+    private static String nameUser;
+    public static final int NUMBER_ROUND = 3;
 
     public static void greeting(String gameCondition) {
         System.out.print("Welcome to the Brain Games!\nMay I have your name? ");

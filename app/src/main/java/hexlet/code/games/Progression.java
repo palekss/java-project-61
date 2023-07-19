@@ -4,11 +4,11 @@ import hexlet.code.Engine;
 import hexlet.code.Util;
 
 public class Progression {
-    public static String gameCondition = "What number is missing in the progression?";
+    private static String gameCondition = "What number is missing in the progression?";
 
     public static void starting() {
         Engine.greeting(gameCondition);
-        for (var i = 0; i < Engine.numberRound; i++) {
+        for (var i = 0; i < Engine.NUMBER_ROUND; i++) {
             final int stringLength = 10;
             final int firstNumber = Util.getRandomInt(1, 25);
             final int progressionDifference = Util.getRandomInt(1, 10);

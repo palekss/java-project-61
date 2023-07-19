@@ -4,11 +4,11 @@ import hexlet.code.Engine;
 import hexlet.code.Util;
 
 public class Even {
-    public static String gameCondition = "Answer 'yes' if the number is even, otherwise answer 'no'.";
+    private static String gameCondition = "Answer 'yes' if the number is even, otherwise answer 'no'.";
 
     public static void starting() {
         Engine.greeting(gameCondition);
-        for (int i = 0; i < Engine.numberRound; i++) {
+        for (int i = 0; i < Engine.NUMBER_ROUND; i++) {
             final int question = Util.getRandomInt(0, 1000);
             String rightAnswer = "yes";
             if (question % 2 != 0) {

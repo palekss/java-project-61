@@ -4,13 +4,13 @@ import hexlet.code.Engine;
 import hexlet.code.Util;
 
 public class Calc {
-    public static String gameCondition = "What is the result of the expression?";
+    private static String gameCondition = "What is the result of the expression?";
 
     public static void starting() {
         Engine.greeting(gameCondition);
-        for (var i = 0; i < Engine.numberRound; i++) {
-            int firstNumber = Util.getRandomInt(0, 30);
-            int secondNumber = Util.getRandomInt(0, 30);
+        for (var i = 0; i < Engine.NUMBER_ROUND; i++) {
+            final int firstNumber = Util.getRandomInt(0, 30);
+            final int secondNumber = Util.getRandomInt(0, 30);
             char symbol = getChar();
             var calcResultDependOnSymbol = 0;
             if (symbol == '+') {
