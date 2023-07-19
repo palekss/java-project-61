@@ -1,24 +1,16 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import java.util.Scanner;
+import hexlet.code.Util;
 
 public class Prime {
-    private static Scanner scan = new Scanner(System.in);
-    private static String nameUser;
+
+    public static String gameCondition = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
 
     public static void starting() {
-        nameUser = Engine.greeting();
-        System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
-        game();
-        Engine.congratulating(nameUser);
-    }
-
-    public static void game() {
-        var i = 0;
-        final var numberOfGameRounds = 3;
-        while (i < numberOfGameRounds) {
-            final int question = Engine.getRandomInt(1, 1000);
+        Engine.greeting(gameCondition);
+        for (var i = 0; i < Engine.numberRound; i++) {
+            final int question = Util.getRandomInt(1, 1000);
             String rightAnswer = "yes";
             if (question < 2) {
                 rightAnswer = "no";
@@ -28,13 +20,8 @@ public class Prime {
                     rightAnswer = "no";
                 }
             }
-            String answer = Engine.question(String.valueOf(question));
-            if (answer.equals(rightAnswer)) {
-                System.out.println("Correct!");
-                i++;
-            } else {
-                Engine.mistake(answer, rightAnswer, nameUser);
-            }
+            Engine.game(String.valueOf(question), rightAnswer);
         }
+        Engine.congratulating();
     }
 }

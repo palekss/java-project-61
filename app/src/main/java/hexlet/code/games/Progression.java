@@ -1,37 +1,32 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import java.util.Scanner;
-
+import hexlet.code.Util;
 
 public class Progression {
-    private static Scanner scan = new Scanner(System.in);
-    private static String nameUser;
+    public static String gameCondition = "What number is missing in the progression?";
 
     public static void starting() {
-        nameUser = Engine.greeting();
-        System.out.println("What number is missing in the progression?");
-        game();
-        Engine.congratulating(nameUser);
-    }
-
-    public static void game() {
-        var i = 0;
-        final var numberOfGameRounds = 3;
-        while (i < numberOfGameRounds) {
+        Engine.greeting(gameCondition);
+        for (var i = 0; i < Engine.numberRound; i++) {
             final int stringLength = 10;
-            final int firstNumber = Engine.getRandomInt(1, 25);
-            final int progressionDifference = Engine.getRandomInt(1, 10);
-            int positionUnknownNumber = Engine.getRandomInt(1, stringLength) - 1;
+            final int firstNumber = Util.getRandomInt(1, 25);
+            final int progressionDifference = Util.getRandomInt(1, 10);
+            int positionUnknownNumber = Util.getRandomInt(1, stringLength) - 1;
             String unknownNumber = String.valueOf(firstNumber + progressionDifference * positionUnknownNumber);
-            String answer = Engine.question(Engine.getProgressionString(stringLength, firstNumber,
-                                                                        progressionDifference, positionUnknownNumber));
-            if (answer.equals(unknownNumber)) {
-                System.out.println("Correct!");
-                i++;
-            } else {
-                Engine.mistake(answer, unknownNumber, nameUser);
+
+            String[] numbers = new String[stringLength];
+            for (var a = 0; a < numbers.length; a++) {
+                numbers[a] = String.valueOf(firstNumber + progressionDifference * a);
             }
+            numbers[positionUnknownNumber] = "..";
+            String resultString = "";
+            for (var b = 0; b < numbers.length; b++) {
+                resultString = resultString + numbers[b] + " ";
+            }
+
+            Engine.game(resultString, unknownNumber);
         }
+        Engine.congratulating();
     }
 }

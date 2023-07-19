@@ -23,6 +23,7 @@ public class Calc {
             String question = firstNumber + " " + symbol + " " + secondNumber;
             Engine.game(question, String.valueOf(calcResultDependOnSymbol));
         }
+        Engine.congratulating();
     }
 
     public static char getChar() {

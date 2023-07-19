@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Engine {
     public static Scanner scan = new Scanner(System.in);
-    private static String nameUser;
+    public static String nameUser;
     public static final int numberRound = 3;
 
     public static void greeting(String gameCondition) {
@@ -24,5 +24,9 @@ public class Engine {
                         + "\nLet's try again, " + nameUser + "!");
             System.exit(0);
         }
+    }
+
+    public static void congratulating() {
+        System.out.println("Congratulations, " + Engine.nameUser + "!");
     }
 }

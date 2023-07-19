@@ -1,10 +1,10 @@
 package hexlet.code;
 
-//import hexlet.code.games.Even;
+import hexlet.code.games.Even;
 import hexlet.code.games.Calc;
-//import hexlet.code.games.GCD;
-//import hexlet.code.games.Progression;
-//import hexlet.code.games.Prime;
+import hexlet.code.games.GCD;
+import hexlet.code.games.Progression;
+import hexlet.code.games.Prime;
 
 import java.util.Scanner;
 
@@ -25,16 +25,16 @@ public class App {
             System.exit(0);
         } else if (numberGame.equals("1")) {
             Cli.greeting();
-//        } else if (numberGame.equals("2")) {
-//            Even.starting();
+        } else if (numberGame.equals("2")) {
+            Even.starting();
         } else if (numberGame.equals("3")) {
             Calc.starting();
-//        } else if (numberGame.equals("4")) {
-//            GCD.starting();
-//        } else if (numberGame.equals("5")) {
-//            Progression.starting();
-//        } else if (numberGame.equals("6")) {
-//            Prime.starting();
+        } else if (numberGame.equals("4")) {
+            GCD.starting();
+        } else if (numberGame.equals("5")) {
+            Progression.starting();
+        } else if (numberGame.equals("6")) {
+            Prime.starting();
         } else {
             System.out.println("This game doesn't exist!");
             System.exit(0);
