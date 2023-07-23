@@ -7,26 +7,22 @@ public class Engine {
     private static String nameUser;
     public static final int NUMBER_ROUND = 3;
 
-    public static void greeting(String gameCondition) {
+    public static void game(String gameCondition, String[][] gameDatas) {
         System.out.print("Welcome to the Brain Games!\nMay I have your name? ");
         nameUser = scan.next();
         System.out.println("Hello, " + nameUser + "!");
         System.out.println(gameCondition);
-    }
-
-    public static void game(String question, String rightAnswer) {
-        System.out.print("Question: " + question + "\nYour answer: ");
-        String answer = scan.next();
-        if (answer.equals(String.valueOf(rightAnswer))) {
-            System.out.println("Correct!");
-        } else {
-            System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was '" + rightAnswer + "'."
-                        + "\nLet's try again, " + nameUser + "!");
-            System.exit(0);
+        for (int i = 0; i < NUMBER_ROUND; i++) {
+            System.out.print("Question: " + gameDatas[i][0] + "\nYour answer: ");
+            String answer = scan.next();
+            if (answer.equals(gameDatas[i][1])) {
+                System.out.println("Correct!");
+            } else {
+                System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was '"
+                        + gameDatas[i][1] + "'." + "\nLet's try again, " + nameUser + "!");
+                System.exit(0);
+            }
         }
-    }
-
-    public static void congratulating() {
         System.out.println("Congratulations, " + Engine.nameUser + "!");
     }
 }

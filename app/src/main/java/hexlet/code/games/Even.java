@@ -3,19 +3,29 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 import hexlet.code.Util;
 
+
 public class Even {
     private static String gameCondition = "Answer 'yes' if the number is even, otherwise answer 'no'.";
-
+    static int question;
     public static void starting() {
-        Engine.greeting(gameCondition);
+        String[][] gameDatas = new String[Engine.NUMBER_ROUND][2];
         for (int i = 0; i < Engine.NUMBER_ROUND; i++) {
-            final int question = Util.getRandomInt(0, 1000);
-            String rightAnswer = "yes";
-            if (question % 2 != 0) {
-                rightAnswer = "no";
-            }
-            Engine.game(String.valueOf(question), rightAnswer);
+            question = Util.getRandomInt(0, 1000);
+            gameDatas[i][0] = String.valueOf(question);
+            gameDatas[i][1] = getRightAnswer();
         }
-        Engine.congratulating();
+        Engine.game(gameCondition, gameDatas);
+    }
+    public static boolean isEven(int number) {
+        return number % 2 == 0;
+    }
+    public static String getRightAnswer() {
+        String rightAnswer;
+        if (isEven(question)) {
+            rightAnswer = "yes";
+        } else {
+            rightAnswer = "no";
+        }
+        return rightAnswer;
     }
 }
