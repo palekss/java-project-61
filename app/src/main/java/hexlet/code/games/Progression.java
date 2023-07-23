@@ -6,23 +6,20 @@ import hexlet.code.Util;
 public class Progression {
     private static String gameCondition = "What number is missing in the progression?";
     static final int STRING_LENGTH = 10;
-    static int firstNumber;
-    static int progressionDifference;
-    static int positionUnknownNumber;
 
     public static void starting() {
         String[][] gameDatas = new String[Engine.NUMBER_ROUND][2];
         for (var i = 0; i < Engine.NUMBER_ROUND; i++) {
-            firstNumber = Util.getRandomInt(1, 25);
-            progressionDifference = Util.getRandomInt(1, 10);
-            positionUnknownNumber = Util.getRandomInt(1, STRING_LENGTH) - 1;
-            gameDatas[i][0] = getProgressionWithoutNumber(positionUnknownNumber);
+            final int firstNumber = Util.getRandomInt(1, 25);
+            final int progressionDifference = Util.getRandomInt(1, 10);
+            final int positionUnknownNumber = Util.getRandomInt(1, STRING_LENGTH) - 1;
+            gameDatas[i][0] = getProgressionWithoutNumber(firstNumber, progressionDifference, positionUnknownNumber);
             gameDatas[i][1] = getRightAnswer(firstNumber, progressionDifference, positionUnknownNumber);
         }
         Engine.game(gameCondition, gameDatas);
     }
 
-    public static String[] getProgression(int firstValue, int progressionDiff) {
+    public static String[] getArrayForProgression(int firstValue, int progressionDiff) {
         String[] numbers = new String[STRING_LENGTH];
         for (var i = 0; i < numbers.length; i++) {
             numbers[i] = String.valueOf(firstValue + progressionDiff * i);
@@ -30,8 +27,8 @@ public class Progression {
         return numbers;
     }
 
-    public static String getProgressionWithoutNumber(int positionUnknownValue) {
-        String[] numbers = getProgression(firstNumber, progressionDifference);
+    public static String getProgressionWithoutNumber(int firstValue, int progressionDiff, int positionUnknownValue) {
+        String[] numbers = getArrayForProgression(firstValue, progressionDiff);
         numbers[positionUnknownValue] = "..";
         String question = "";
         for (var i = 0; i < numbers.length; i++) {

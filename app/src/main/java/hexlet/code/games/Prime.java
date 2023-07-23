@@ -6,14 +6,13 @@ import hexlet.code.Util;
 public class Prime {
 
     private static String gameCondition = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
-    static int question;
 
     public static void starting() {
         String[][] gameDatas = new String[Engine.NUMBER_ROUND][2];
         for (var i = 0; i < Engine.NUMBER_ROUND; i++) {
-            question = Util.getRandomInt(1, 1000);
+            final int question = Util.getRandomInt(1, 1000);
             gameDatas[i][0] = String.valueOf(question);
-            gameDatas[i][1] = getRightAnswer();
+            gameDatas[i][1] = getRightAnswer(question);
         }
         Engine.game(gameCondition, gameDatas);
     }
@@ -31,9 +30,9 @@ public class Prime {
         }
     }
 
-    public static String getRightAnswer() {
+    public static String getRightAnswer(int number) {
         String rightAnswer;
-        if (isPrime(question)) {
+        if (isPrime(number)) {
             rightAnswer = "yes";
         } else {
             rightAnswer = "no";

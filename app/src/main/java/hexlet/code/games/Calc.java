@@ -5,7 +5,6 @@ import hexlet.code.Util;
 
 public class Calc {
     private static String gameCondition = "What is the result of the expression?";
-    static String  question = "";
 
     public static void starting() {
         String[][] gameDatas = new String[Engine.NUMBER_ROUND][2];
@@ -13,7 +12,7 @@ public class Calc {
             final int firstNumber = Util.getRandomInt(0, 30);
             final int secondNumber = Util.getRandomInt(0, 30);
             char symbol = getChar();
-            question = firstNumber + " " + symbol + " " + secondNumber;
+            String question = firstNumber + " " + symbol + " " + secondNumber;
             gameDatas[i][0] = question;
             gameDatas[i][1] = getRightAnswer(symbol, firstNumber, secondNumber);
         }
